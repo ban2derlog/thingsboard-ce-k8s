@@ -30,8 +30,7 @@ spec:
       labels:
         app: tb-node
     spec:
-      nodeSelector:
-        role: main
+      serviceAccountName: thingsboard
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
