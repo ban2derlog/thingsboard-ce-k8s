@@ -25,7 +25,7 @@ spec:
     targetPort: 8080
   to:
     kind: Service
-    name: tb-http-transport
+    name: tb-node
   tls:
     termination: Edge
 ---
@@ -55,7 +55,7 @@ spec:
     targetPort: 8080
   to:
     kind: Service
-    name: tb-web-ui
+    name: tb-node
   tls:
     termination: Edge
 ---
@@ -70,7 +70,7 @@ spec:
     targetPort: 8080
   to:
     kind: Service
-    name: tb-web-ui
+    name: tb-node
   tls:
     termination: Edge
 ---
@@ -85,7 +85,7 @@ spec:
     targetPort: 8080
   to:
     kind: Service
-    name: tb-web-ui
+    name: tb-node
   tls:
     termination: Edge
 ---
