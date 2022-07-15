@@ -21,10 +21,5 @@ source .env
 
 kubectl config set-context $(kubectl config current-context) --namespace=thingsboard
 
-kubectl apply -f tb-node-configmap.yml
-kubectl apply -f tb-transport-configmap.yml
-kubectl apply -f thingsboard.yml
 kubectl apply -f tb-node.yml
-
-kubectl apply -f routes.yml
-
+oc create -f routes.yml
